@@ -1,12 +1,13 @@
-nota1 = input ("A nota do primeiro teste: ")
-nota2 = input ("A nota do segundo teste: ")
-nota3 = input ("A nota do terceiro teste: ")
+nota1 = float(input("Introduza o valor da primeira nota (0-20): "))
+nota2 = float(input("Introduza o valor da segunda nota (0-20): "))
+nota3 = float(input("Introduza o valor da terceira nota (0-20): "))
 
-media = nota1 + nota2 + nota3 / 3
+media = float((nota1 * 25 + nota2 * 35 + nota3 * 40) / 100)
+media_int = float((nota1 * 25 + nota2 * 35 + nota3 * 40) // 100)
+media_mod = (nota1 * 25 + nota2 * 35 + nota3 * 40) % 100
 
-if media => 9.5:
-    print("Aprovado")
-else:
-    print("reprovado")
+print("A media das notas e", media ,"%")
+print("A media inteira e:", media_int)
+print("O modulo da divisao e:", int(media_mod))
    
 
