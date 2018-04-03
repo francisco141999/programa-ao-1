@@ -1,6 +1,6 @@
-numero=int(input("Escreva um número "))
+numero=int(input("Introduza um número "))
 if numero == 2:
-    print("O número {} primo".format(numero))
+    print("O número {} é primo".format(numero))
 else:
     while numero > 1:
         for i in range(2,numero):
@@ -12,4 +12,4 @@ else:
                 break
         break
 if numero <= 1:
-    print("Para ser primo tem de ser superior a 1, por isso o numero {} não é possivel",format(numero))
+    print("Para ser primo tem de ser superior a 1, por isso o número {} não é possivel",format(numero))

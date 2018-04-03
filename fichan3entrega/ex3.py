@@ -1,4 +1,4 @@
-voto=int(input("Insira o seu voto (1, 2, 3 ,4), (0 para voto nulo), (9 para voto em branco) e (-1 para terminar) : "))
+voto=int(input("Introduza o seu voto (1, 2, 3 ,4), (0 para voto nulo), (9 para voto em branco) e (-1 para terminar) : "))
 candidato1 = 0
 candidato2 = 0
 candidato3 = 0
@@ -18,7 +18,7 @@ while voto != -1:
         votobranco += 1
     if voto == 9:
         votonulo += 1
-    voto=int(input("Insira o seu voto (1, 2, 3 ,4), (0 para voto nulo), (9 para voto em branco) e (-1 para terminar) : "))
+    voto=int(input("Introduza o seu voto (1, 2, 3 ,4), (0 para voto nulo), (9 para voto em branco) e (-1 para terminar) : "))
 
 totalvotos= candidato1 + candidato2 + candidato3 + candidato4 + votonulo + votobranco
 percentagem_candidato1 = (candidato1 * 100) / totalvotos
