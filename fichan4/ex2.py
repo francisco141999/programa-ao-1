@@ -17,18 +17,15 @@ numero2 = int(input("Introduza o segundo numero: "))
 
 operaçao=input("Introduza a operacao (+),(-),(*) e (/): ")
 
-if operaçao == "+"
-    soma(numero1,numero2)
-    print("{} = {} + {}".format(numero1,numero2,soma)
-
-elif  operaçao == "-"
-    subtraçao(numero1,numero2)
-    print("{} = {} - {}".format(numero1,numero2,subtraçao)  
-
-elif  operaçao == "/"
-    divisao(numero1,numero2)
-    print("{} = {} - {}".format(numero1,numero2,divisao)    
-
-elif  operaçao == "*"
-    multiplicacao(numero1,numero2)
-    print("{} = {} - {}".format(numero1,numero2,multiplicacao)               
+if operaçao == "+":
+    resultado = soma(numero1,numero2)
+    print("{} = {} + {}".format(resultado,numero2,numero1))
+elif operaçao == "-":
+    resultado = subtraçao(numero1,numero2)
+    print("{} = {} - {}".format(resultado,numero2,numero1)) 
+elif operaçao == "/":
+    resultado = divisao(numero1,numero2)
+    print("{} = {} - {}".format(resultado,numero2,numero1))    
+elif  operaçao == "*":
+    resultado = multiplicacao(numero1,numero2,)
+    print("{} = {} - {}".format(resultado,numero2,numero1))              
