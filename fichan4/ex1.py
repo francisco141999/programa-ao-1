@@ -2,8 +2,9 @@
 exercicio 1
 """
 
-def print_line(valor):
-    print("*" * valor)
+def imprimir():
+    print("*" * numero)
 
 numero=int(input("Introduza um numero: "))
-print(numero)
+
+imprimir()
