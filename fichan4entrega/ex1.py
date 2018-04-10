@@ -1,16 +1,16 @@
-def login (utilizador,password) :
+def login(utilizador,password):
     user = "aluno"
     passw = "Estg18"
     if user == utilizador and passw == password:
-     return True
+        return True
     return False
 
 def validarlogin () :
         conta = 0
         while conta < 3:
 
-            utilizador =input("Introduza o utilizador: ")
-            password =input("Introduza a password: ")
+            utilizador =input("Introduza o utilizador: ")  # ggggg
+            password =input("Introduza a password: ") # 123
             if login(utilizador,password): 
                 print("Login com sucesso")
                 break
