@@ -1,18 +1,22 @@
-"""def user/passw ():"""
-user = "aluno"
-passw = "Estg18"
+def login (utilizador,password) :
+    user = "aluno"
+    passw = "Estg18"
+    if user == utilizador and passw == password:
+     return True
+    return False
 
 def validarlogin () :
-    conta = 0
-    while conta != 3:
-        utilizador =input("Introduza o utilizador: ")
-        password =input("Introduza a password: ")
-        if user == utilizador and passw == password:
-            print("Login com sucesso")
-        else:
-            print("Login sem sucesso")
+        conta = 0
+        while conta < 3:
 
-"""conta += 1"""
+            utilizador =input("Introduza o utilizador: ")
+            password =input("Introduza a password: ")
+            if login(utilizador,password): 
+                print("Login com sucesso")
+                break
+            else:
+                print("Login sem sucesso")
+            conta += 1
 
 validarlogin()            
 
