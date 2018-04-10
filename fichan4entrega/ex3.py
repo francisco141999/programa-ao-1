@@ -1,20 +1,18 @@
-carater = input("Introduza o carater que quer utilizar: ")
-linha = input("Introduza o numero linha que quer utilizar: ")
-coluna = input ("Introduza o numero que quer utilizar coluna: ")
-def numero (linhas, colunas, caracter) :
+
+def numero (linha, coluna, carater) :
      
-    for i in range(1, linhas + 1) :
-        for e in range(1, colunas + 1) :
-            if (i == 1 or i == linhas or e == 1 or e == colunas) :
-                print(caracter, end="")            
+    for i in range(1, linha + 1) :
+        for e in range(1, coluna + 1) :
+            if (i == 1 or i == linha or e == 1 or e == coluna) :
+                print(carater, end="")            
             else :
                 print(" ", end="")            
         print()
  
  
-linhas = int(input('Quantas linhas quer ter: '))
-colunas = int(input('Quantas colunas quer ter: '))
-caracter = input('Escolha o caracter que pretende utilizar: ')
+carater = int(input("Introduza o carater que quer utilizar: "))
+linha = int(input("Introduza o numero linha que quer utilizar: "))
+coluna = int(input ("Introduza o numero que quer utilizar coluna: "))
 
 
-numero(linhas, colunas, caracter)
+numero(linha, coluna, carater)
