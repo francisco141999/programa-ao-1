@@ -1,4 +1,3 @@
-
 def numero (linha, coluna, carater) :
      
     for i in range(1, linha + 1) :
@@ -10,9 +9,8 @@ def numero (linha, coluna, carater) :
         print()
  
  
-carater = int(input("Introduza o carater que quer utilizar: "))
-linha = int(input("Introduza o numero linha que quer utilizar: "))
-coluna = int(input ("Introduza o numero que quer utilizar coluna: "))
-
+carater = int(input("Introduza o numero do carater que quer utilizar: "))
+linha = int(input("Introduza o numero da linha que quer utilizar: "))
+coluna = int(input ("Introduza o numero da coluna que quer utilizar : "))
 
 numero(linha, coluna, carater)

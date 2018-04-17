@@ -1,10 +1,10 @@
-def fact(n):
-    if n == -1:
+def numero(numero_max):
+    if numero_max == -1:
         return 0
-    elif fact(n - 1):
-        return n
-    print(n)
+    elif numero(numero_max - 1):
+        return numero_max
+    print(numero_max)
 
-num = int(input('Introduza um numero: '))
+num = int(input('Introduza um numero maximo: '))
 
-fact(num)
+numero(num)
