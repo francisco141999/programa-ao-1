@@ -1,22 +1,40 @@
-def print_board():
-    print "     |     |     "
-    print " "+board[1]+" | "+board[2]+" | "+board[3]+" "
-    print "     |     |     "
-    print " ----|-----|-----"
-    print "     |     |     "
-    print " "+board[4]+" | "+board[5]+" | "+board[6]+" "
-    print "     |     |     "
-    print " ----|-----|-----"
-    print "     |     |     "
-    print " "+board[7]+" | "+board[8]+" | "+board[9]+" "
-    print "     |     |     "
+class jogador():
+    
+    def __init__(self):
+        self.nome = ""
+        self.token = ""
+    def validar_jogador(self):
+        while True:
+            if jogador1.token == "X" or jogador1.token == "x" or jogador1.token == "O" or jogador1.token == "o":
+                return self.token    
+                break
+            else:
+                self.token = input("Token que perntede usar(X/0): ")
+               
+class tabuleiro():
+    
+    def printTabuleiro(self):
+        print(' | A | B | C |')
+        print( '--------------')
+        print( '1| '   '  | '   '  | '   '  |')
+        print( '--------------')
+        print( '2| '   '  | '   '  | '   '  |') 
+        print( '--------------')
+        print( '3| '   '  | '   '  | '   '  |')
+        print( '--------------')
 
-while True:
-    os.system("Clear")
-    print_header()
-    print_board()    
+tabuleiro1 = tabuleiro()
+tabuleiro1.tabuleiro = [ ["A1", "A2", "A3"], 
+                         ["B1", "B2", "B3"], 
+                         ["C1", "C2", "C3"] ]
     
-    choice = raw_input("Please choose an empty space for X")
-    choice =int(choice)
-    
-    board[choice] = "X"
+jogador1 = jogador()
+jogador1.nome = input("Nome do jogador: ")
+jogador1.token = input("Token que prente usar (X/O): ")
+
+jogador2 = jogador()
+jogador2.nome = input("Nome do jogador: ")
+jogador2.token = input("Token que prente usar (X/O): ")
+
+tabuleiro1.printTabuleiro()
+jogador1.validar_jogador()
