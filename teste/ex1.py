@@ -83,7 +83,11 @@ jogar = tabuleiro()
 numero_max_jogadas = 0
 vencedor = False
 # Este ciclo serve para enquanto a 9 jogadas não forem jogadas ou não existir vencedor o programa continua a pedir jogadas aos utilizadores
-while numero_max_jogadas < 9 :
+'''
+muda o while para for
+'''
+
+while numero_max_jogadas < 9 
     jogada = input("{}, escreva a posição que pretende jogar (A1-C3): ".format(jogador1.nome))
     if jogada == "Desistir" or jogada == "desistir":
         break
